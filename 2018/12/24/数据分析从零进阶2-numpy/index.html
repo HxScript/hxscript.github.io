@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>HxSript的个人博客</title>
+  <title>数据分析从零进阶2-numpy | HxSript的个人博客</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -191,36 +191,37 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2018-11-19T15:30:45.958Z" itemprop="datePublished">
-          2018-11-19
+      <time datetime="2018-12-24T15:25:21.000Z" itemprop="datePublished">
+          2018-12-24
       </time>
     
+    
+    | 
+    <a href='/tags/数据分析/'>数据分析</a>,
+    
+    <a href='/tags/入门/'>入门</a>
+    
+    
 </span>
-                <h1></h1>
+                <h1>数据分析从零进阶2-numpy</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<p>﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿—<br>title: 优达数据分析系列1数据分析初探笔记<br>date: 2018-12-10 11:22:21<br>tags:  </p>
-<pre><code>- 数据分析
-- python
-- 入门
-- udacity
-</code></pre><h2 id="comments-true"><a href="#comments-true" class="headerlink" title="comments: true"></a>comments: true</h2><h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><h4 id="1、列表的相关函数"><a href="#1、列表的相关函数" class="headerlink" title="1、列表的相关函数"></a>1、列表的相关函数</h4><p>回忆他们的作用，和相关用法：</p>
-<pre><code>1. len(some_list)
-2. max(some_list)(输入的若是字符串、数字，或同时含有几个不同类型的元素，会有什么不同)
-3. min(some_list)同max(some_list)
-4. sorted(some_list, [reverse = True]):返回值是什么？原列表会变化吗?
-5. &quot;-&quot;.join(some_list)
-6. some_list.append(one_element)：仅接受一个元素！
-6. some_list.remove(one_element)：仅接受一个元素！
-</code></pre><hr>
-<h4 id="2、字符串的相关函数"><a href="#2、字符串的相关函数" class="headerlink" title="2、字符串的相关函数"></a>2、字符串的相关函数</h4><hr>
-<h4 id="一些tip："><a href="#一些tip：" class="headerlink" title="一些tip："></a>一些tip：</h4><hr>
+      		<p>数据分析有很多工具，就语言上来讲，有R语言，和python。<br>由于我手里的课程是python的，就从python开始学起（但其实，语言本身，大同小异。并不是学习一个新技能的阻碍，纠结学什么语言，不如先学起来）。</p>
+<h3 id="python基础语法"><a href="#python基础语法" class="headerlink" title="python基础语法"></a>python基础语法</h3><p>这里我把一些基础语法整理成了思维导图（见文末），便于自己查找和复习。<br>这里其实并不是很细，因为一些api、python原生的属性、方法，完全是可以在用到的时候，去查手册的。没有必要死记硬背。</p>
+<p>因此，在熟悉python的基础语法之后，就可以写一些小的算法题，或者开始学习一个库了。</p>
+<h3 id="numpy"><a href="#numpy" class="headerlink" title="numpy"></a>numpy</h3><p>python有很多库。这些库都是用来解决某个特定领域的某些特定问题的。</p>
 <blockquote>
-<ol>
-<li>列表是可变的，而字符串不可变。</li>
-<li>列表中的每一个元素，都需要用”,”隔开。否则在作为参数传递至join函数中，会出现问题。此外，该列表中的数据类型存在不为字符串的类型时，也会触发错误。</li>
-</ol>
+</blockquote>
+<p>例如：Numpy是以矩阵为基础的数学计算模块，纯数学。<br>Scipy基于Numpy，科学计算库，有一些高阶抽象和物理模型。比方说做个傅立叶变换，这是纯数学的，用Numpy；做个滤波器，这属于信号处理模型了，在Scipy里找。<br>Pandas提供了一套名为DataFrame的数据结构，比较契合统计分析中的表结构，并且提供了计算接口，可用Numpy或其它方式进行计算。</p>
+<p>也正是因为有了这些丰富的库，让我们能得以站在巨人的肩膀上，不用纠结某一块很细节的事务是怎么处理的，而只用关心业务就好（一些的库都是如此，看看npm）。</p>
+<p>关于numpy和python基础语法，这里整理了一份思维导图（主要是按极客时间上陈旸老师的数据分析课程整理）。</p>
+<blockquote>
+<p><a href="https://mubu.com/doc/zgxb309Pv-" target="_blank" rel="noopener">https://mubu.com/doc/zgxb309Pv-</a><br>幕布，是一个国产的，和workflowy一样的“条目”式的全平台思维导图。</p>
+</blockquote>
+<p>此外，还可以在科赛网进行numpy、pandas等python数据分析库的学习。这里提供了一些基础库的学习教程，fork一下，就可以用科赛网提供的在线环境学习了。此外，还会有一些竞赛，学习到达一定程度，就可以参加竞赛来检验自己的学习水平。</p>
+<blockquote>
+<p><a href="https://www.kesci.com/home/project/5a0575cd60680b295c1ecff2" target="_blank" rel="noopener">https://www.kesci.com/home/project/5a0575cd60680b295c1ecff2</a><br>科赛网还提供了免费的jupyter notebook环境，可以对代码进行快速调试。</p>
 </blockquote>
 
             <div class="clearfix"></div>
@@ -228,13 +229,9 @@
         </div>
         <nav class="pagination" role="pagination">
     
-    <a class="pull-left" href="/2018/12/20/不一定要一开始就很厉害，要把事情先做起来：数据分析从零进阶1/" style="float: left;">
-        ← 不一定要一开始就很厉害，要把事情先做起来：数据分析从零进阶1
-    </a>
     
-    
-    <a class="pull-right" href="/2016/12/16/怎么样做出一款没有人用的产品？/">
-        怎么样做出一款没有人用的产品？ →
+    <a class="pull-right" href="/2018/12/20/不一定要一开始就很厉害，要把事情先做起来：数据分析从零进阶1/">
+        不一定要一开始就很厉害，要把事情先做起来：数据分析从零进阶1 →
     </a>
     
 </nav>
